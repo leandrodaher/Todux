@@ -1,0 +1,59 @@
+.AddTodo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.AddTodo input {
+    display: inline-block;
+    height: 32px;
+
+    outline: none;
+    border: 1px solid  #e2e2e2;
+    border-radius: 5px;
+    color:rgb(100, 100, 100);
+
+    text-align: center;
+    font-size: 18px;
+
+    transition: all 0.2s;
+
+    box-shadow: 0 3px 5px rgb(100, 100, 100);
+}
+
+.AddTodo input:focus {
+    border: 1px solid  #8e25e4;
+    box-shadow: 0 5px 10px rgb(100, 100, 100);
+}
+
+.AddTodo button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    background-color: #8e25e4;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+
+    transition: all 0.2s;
+
+    box-shadow: 0 3px 5px rgb(100, 100, 100);
+}
+
+.AddTodo button:hover {
+    background-color: #fff;
+    color: #8e25e4;
+
+    box-shadow: 0 5px 10px rgb(100, 100, 100);
+}

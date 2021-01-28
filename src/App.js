@@ -4,10 +4,12 @@ import TodoList from './components/TodoList';
 
 import './css/App.css';
 
-function App() {
+export const App = () => {
   return (
     <div className="App">
-      <TodoList />
+      <div className="container">
+        <TodoList />
+      </div>
     </div>
   );
 }

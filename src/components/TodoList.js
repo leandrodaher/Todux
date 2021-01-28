@@ -2,21 +2,31 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import AddTodo from './AddTodo';
 
+import './TodoList.css';
+
 export const TodoList = () => {
     const todos = useSelector(state => state.todos);
 
     return (
-        <div>
-            <ul>
-                <li>Item do todo</li>
-                {
-                    todos.map((item, key) =>
-                        <li key={key}>{item.text}</li>
-                    )
-                }
-            </ul>
+        <div className="TodoList">
+            <div className="list">
+                <h1>Todux App</h1>
+                <ul>
+                    {
+                        todos.map((item, key) =>
+                            <li key={key}>
+                                {item.text}
+                                <span>X</span>
+                            </li>
+                        )
+                    }
+                </ul>    
+            </div>
 
-            <AddTodo />
+            <div className="addTodo">
+                <AddTodo />
+            </div>
+            
         </div>
     );
 }
