@@ -1,7 +1,7 @@
 # Todux - Todo App Arquitetura Flux
 Aplicativo Web ReactJS feito para estudar os conceitos básicos por trás da arquitetura Flux utiliando a biblioteca Redux.
 
-![ToduxImage](https://leandrodaher.github.io/images/todux.PNG)
+![ToduxImg](https://leandrodaher.github.io/images/todux.PNG)
 
 Work in progress.
 
