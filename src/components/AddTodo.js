@@ -4,7 +4,7 @@ import { addTodo } from '../actions/todos';
 
 import './AddTodo.css';
 
-export const AddTodo = () => {
+export default function AddTodo() {
     const [input, setInput] = useState('');
     const dispatch = useDispatch();
 
@@ -27,5 +27,3 @@ export const AddTodo = () => {
         </div>
     );
 }
-
-export default AddTodo;

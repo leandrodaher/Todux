@@ -8,3 +8,22 @@ export function addTodo(text) {
         }
     }
 }
+
+export function toggleTodo(id, toggle) {
+    return {
+        type: action.TOGGLE_TODO,
+        payload: {
+            id,
+            toggle
+        }
+    }
+}
+
+export function removeTodo(id) {
+    return {
+        type: action.REMOVE_TODO,
+        payload: {
+            id,
+        }
+    }
+}

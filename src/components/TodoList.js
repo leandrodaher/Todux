@@ -1,11 +1,12 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import AddTodo from './AddTodo';
+import TodoItem from './TodoItem';
 
 import './TodoList.css';
 
-export const TodoList = () => {
-    const todos = useSelector(state => state.todos);
+export default function TodoList() {
+    const todos = useSelector(store => store.todos);
 
     return (
         <div className="TodoList">
@@ -14,10 +15,10 @@ export const TodoList = () => {
                 <ul>
                     {
                         todos.map((item, key) =>
-                            <li key={key}>
-                                {item.text}
-                                <span>X</span>
-                            </li>
+                            (
+                                
+                                <TodoItem key={key} id={item.id} text={item.text} toggle={item.toggle} />
+                            )
                         )
                     }
                 </ul>    
@@ -30,5 +31,3 @@ export const TodoList = () => {
         </div>
     );
 }
-
-export default TodoList;

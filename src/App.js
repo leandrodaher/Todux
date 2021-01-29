@@ -4,7 +4,7 @@ import TodoList from './components/TodoList';
 
 import './css/App.css';
 
-export const App = () => {
+export default function App() {
   return (
     <div className="App">
       <div className="container">
@@ -13,5 +13,3 @@ export const App = () => {
     </div>
   );
 }
-
-export default App;

@@ -1,30 +1,4 @@
-.TodoList {
-    width: 100%;
-    height: 100%;
-
-    /* overflow-x: hidden;
-    overflow-y: hidden; */
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.TodoList .list {
-    display: block;
-    width: 100%;
-
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-.TodoList .list h1 {
-    color: rgba(66, 66, 66, 0.65);
-    text-align: center;
-}
-
-/* .TodoList .list ul {
+.TodoList .list ul {
     list-style: none;
     padding-left: 10px;
 }
@@ -46,7 +20,7 @@
     height: 16px;
     
     margin-right: 16px;
-    vertical-align: middle; /* centraliza horizontalmente em relação ao texto 
+    vertical-align: middle; /* centraliza horizontalmente em relação ao texto */
 }
 
 .TodoList .list ul li span {
@@ -69,12 +43,8 @@
     color: #ffffff;
 
     background-color: #dd2929;
-} */
+}
 
-.TodoList .addTodo {
-    display: block;
-    width: 100%;
-
-    margin-top: 10px;
-    margin-bottom: 10px;
+.itemChecked {
+    background-color: rgba(0, 0, 0, 0.1);
 }
